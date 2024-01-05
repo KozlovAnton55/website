@@ -1,0 +1,173 @@
+/* Стили для основного контейнера */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Стили для заголовка */
+.header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Стили для навигационного меню */
+.menu-buttons {
+    display: flex;
+    justify-content: center; /* Центрирование контента по горизонтали */
+    align-items: center; /* Центрирование контента по вертикали (если нужно) */
+    gap: 20px; 
+    background-color: #444;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: #ff5733;
+    color: #ffffff; /* Цвет текста на кнопке */
+    font-size: 16px; /* Размер текста */
+    border-radius: 5px; /* Закругление углов кнопки */
+    padding: 10px 20px; /* Внутренний отступ кнопки */
+    border: none; /* Убирает границу */
+    cursor: pointer; /* Делает курсор указателем при наведении на кнопку */
+}
+
+.navbar a {
+    color:#fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Стили для основного контента */
+.content {
+    padding: 20px 0;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.footer {
+    margin-top: 50px; 
+    background-color:#555;
+    padding: 50px 0;
+    text-align: center;
+    color:aqua;
+}
+
+
+h2 {
+    font-size: 3em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+h3 {
+    font-size: 2em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+p {
+    font-size: 1.2em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+p1 {
+    font-size: 2em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+li {
+    font-size: 1.2em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+.title-center {
+    text-align: center;
+    margin-top: 50px; /* Это может быть любой отступ, который вы хотите добавить над заголовком */
+    margin-bottom: 50px; /* А это отступ под заголовком */
+}
+
+
+h {
+    font-size: 1.2em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+h4 {
+    font-size: 3em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+p2 {
+    font-size: 1.2em; /* Увеличивает размер шрифта. Вы можете изменить значение (2em) на другое, чтобы получить желаемый размер */
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Отступ между блоками услуг */
+}
+
+.service img {
+    margin-right: 20px; /* Отступ между изображением и описанием */
+    max-width: 300px; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.details {
+    flex-grow: 1; /* Растягивает блок с описанием на всю доступную ширину */
+}
+
+.details h3 {
+    margin-top: 0; /* Убирает верхний отступ у заголовка */
+}
+
+body {
+    background: #f4f4f4 url('images/фон.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Общие стили, которые будут применяться на всех устройствах */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для десктопных устройств */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для планшетов (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Стили для мобильных устройств (ширина экрана до 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+    /* Дополнительные стили для мобильных устройств */
+    .menu-buttons button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* Адаптивное изображение, которое будет изменять свой размер в зависимости от ширины контейнера */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
